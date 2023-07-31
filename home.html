@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="button-allignment.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <title>Title</title>
 </head>
 <body>
     <div>
-        <p class="buttonAlgn textFont">Total number of zombies:7</p>
+        <p class="counter">
+            <span>Total number of zombies:</span>
+            <span id="counter"></span>
+        </p>
     </div>
-    <div class="buttonAlgn textFont">
-
-        <button type="button" class=" buttonRoundGreen">Add zombie</button>
-        <button type="button" class=" buttonRoundGreen">Remove zombie</button>
+    <div class="container">
+        <button type="button" id="increase" class="button">Add zombie</button>
+        <button type="button" id="decrease" class="button">Remove zombie</button>
     </div>
 </body>
+<script src="magic.js"></script>
 </html>
